@@ -1,0 +1,54 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/more/index",
+        "pages/info/index",
+        "pages/featured/index",
+		"pages/search/index",
+		"pages/class/index",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Unsplash",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "backgroundColor": "#fff",
+        "color": "#dbdbdb",
+        "selectedColor": "#000",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "Today",
+                "iconPath": "./images/today-unselected.png",
+                "selectedIconPath": "./images/today-selected.png"
+            },
+            {
+                "pagePath": "pages/featured/index",
+                "text": "精选集",
+                "iconPath": "./images/home3-unselected.png",
+                "selectedIconPath": "./images/home3-selected.png"
+            },
+			{
+				"pagePath": "pages/class/index",
+				"text": "发现",
+				"iconPath": "./images/discover-unselected.png",
+				"selectedIconPath": "./images/discover-selected.png"
+			},
+            {
+                "pagePath": "pages/more/index",
+                "text": "更多",
+                "iconPath": "./images/more-unselected.png",
+                "selectedIconPath": "./images/more-selected.png"
+            }
+        ]
+    },
+    "plugins": {
+        "sdkPlugin": {
+            "version": "1.7.0",
+            "provider": "wxc6b86e382a1e3294"
+        }
+    }
+}

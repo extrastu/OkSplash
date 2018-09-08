@@ -1,0 +1,53 @@
+<view class="page">
+    <view class='wrap' style='width:90%;margin: 0 auto'>
+        <view class='page__hd'>
+            <view class="weui-flex">
+                <view>
+                    <view class="placeholder">发现专题</view>
+                </view>
+                <view class="weui-flex__item">
+                    <view class="placeholder">更多 ></view>
+                </view>
+            </view>
+        </view>
+        <view class='page__hd'>
+            <view style='width:100%;height:100px'>
+                <image src="{{randomSrc}}" mode='aspectFill' style='width:100%;height:100%; border-radius:15px;overflow:hidden;' data-src='{{randomSrc}}' bindtap='previewImg'></image>
+            </view>
+        </view>
+
+        <view class='page__hd'>
+            <view class="weui-flex">
+                <view>
+                    <view class="placeholder">颜色专题</view>
+                </view>
+                <view class="weui-flex__item">
+                    <view class="placeholder"></view>
+                </view>
+                <view>
+                    <view class="placeholder">更多 ></view>
+                </view>
+            </view>
+        </view>
+        <view class='page__hd'>
+            <view class="section section_gap">
+                <scroll-view class="scroll-view_H" scroll-x style="width: 100%;height:100%;" scroll-with-animation="true">
+                    <view wx:for="{{colorArray}}" bindtap='enterThisType' data-type='{{item.color}}' wx:key="*this" class="scroll-view-item_H" style='background:{{item.color}};color:pink'> {{item.color}}</view>
+                </scroll-view>
+            </view>
+        </view>
+		<view class='page__hd'>
+            <view class="weui-flex">
+                <view>
+                    <view class="placeholder">精选专题</view>
+                </view>
+                <view class="weui-flex__item">
+                    <view class="placeholder"></view>
+                </view>
+                <view>
+                    <view class="placeholder">更多 ></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

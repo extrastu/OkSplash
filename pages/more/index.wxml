@@ -1,0 +1,90 @@
+<view class='wrap' style='height:{{dh}}'>
+   <!-- <view class='user'>
+        <image src='{{user_info.avatarUrl}}'  mode="widthFix" style='width:100px;height:100px;border-radius:50px;margin:0 auto;display:block;border:1px solid grey;'></image>
+        <view style='width:100px;margin: 0 auto;text-align:center;margin-top:20px;margin-bottm:20px;'>{{user_info.nickName}}</view>
+   </view> -->
+  
+    <view class='class_item'>
+        <view class='item_title'>
+            <text class="fa fa-eye" style='color:#fff;font-size:14px;margin-left:10px; '></text>
+            <text style='color:#fff;font-size:14px;margin-left:10px; '>views</text>
+        </view>
+        <view class='item_body'>
+            {{views}}
+        </view>
+    </view>
+    <view class='class_item'>
+        <view class='item_title'>
+            <text class="fa fa-cloud-download" style='color:#fff;font-size:14px;margin-left:10px; '></text>
+            <text style='color:#fff;font-size:14px;margin-left:10px; '>downloads</text>
+        </view>
+        <view class='item_body'>
+            {{downloads}}
+        </view>
+    </view>
+    <view class='class_item'>
+        <view class='item_title'>
+            <text class="fa fa-user" style='color:#fff;font-size:14px;margin-left:10px; '></text>
+            <text style='color:#fff;font-size:14px;margin-left:10px; '>developers</text>
+        </view>
+        <view class='item_body'>
+            {{developers}}
+        </view>
+    </view>
+    <view class='class_item'>
+        <view class='item_title'>
+            <text class="fa fa-photo" style='color:#fff;font-size:14px;margin-left:10px; '></text>
+            <text style='color:#fff;font-size:14px;margin-left:10px; '>photos</text>
+        </view>
+        <view class='item_body'>
+            {{photos}}
+        </view>
+    </view>
+    <view class='class_item'>
+        <view class='item_title'>
+            <text class="fa fa-heart" style='color:#fff;font-size:14px;margin-left:10px; '></text>
+            <text style='color:#fff;font-size:14px;margin-left:10px; '>likes</text>
+        </view>
+        <view class='item_body'>
+            {{likes}}
+        </view>
+    </view>
+    <view class='class_item'>
+        <view class='item_title'>
+            <text class="fa fa-bullseye" style='color:#fff;font-size:14px;margin-left:10px; '></text>
+            <text style='color:#fff;font-size:14px;margin-left:10px; '>views_per_second</text>
+        </view>
+        <view class='item_body'>
+            {{views_per_second}}
+        </view>
+    </view>
+    <view class='class_item'>
+        <view class='item_title'>
+            <text class="fa fa-bandcamp" style='color:#fff;font-size:14px;margin-left:10px; '></text>
+            <text style='color:#fff;font-size:14px;margin-left:10px; '>applications</text>
+        </view>
+        <view class='item_body'>
+            {{applications}}
+        </view>
+    </view>
+     <view class='class_item'>
+        <view class='item_title'>
+            <text class="fa fa-arrow-down" style='color:#fff;font-size:14px;margin-left:10px; '></text>
+            <text style='color:#fff;font-size:14px;margin-left:10px; '>requests</text>
+        </view>
+        <view class='item_body'>
+            {{requests}}
+        </view>
+    </view>
+	
+     <button class='class_item' style='text-align:center;line-height:90px;color:white;' open-type="getUserInfo" wx-if='{{is_authorized}}' bindgetuserinfo="userInfoHandler">登录</button>
+	 <view class='class_item'>
+        <view class='item_title'>
+            <text class="fa fa-star" style='color:#fff;font-size:14px;margin-left:10px; '></text>
+            <text style='color:#fff;font-size:14px;margin-left:10px; '>更新记录</text>
+        </view>
+        <view class='item_body'>
+           v1.1.0
+        </view>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "精选集",
+    "navigationBarTextStyle": "black",
+	"enablePullDownRefresh": true,
+	"backgroundTextStyle": "dark"
+}

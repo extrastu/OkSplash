@@ -1,0 +1,6 @@
+<view class='img'>
+    <image src='{{src}}' style=' box-shadow: 5px 5px 5px pink; ' mode="widthFix" data-src="{{src}}"  bindload="imgload" bindtap='previewImg'></image>
+    <image wx-if='{{isLoading}}' src='../../images/loading.svg' mode="widthFix" class='loading'></image>
+    <view class='author' style='background:{{color}}'>By·{{author}}</view>
+    <view class='download' data-src="{{src}}" style='background:{{color}}' bindtap='downloadThisImg'>下载</view>
+</view>

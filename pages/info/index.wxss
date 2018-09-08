@@ -1,0 +1,30 @@
+.img {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.download,.author {
+    margin-bottom: 20px;
+    height: 50px;
+    line-height: 50px;
+    width: 98%;
+    background: grey;
+    color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid #222;
+    box-shadow: 5px 5px 5px 5px pink; 
+}
+.author{
+    margin-top: 10%;
+}
+
